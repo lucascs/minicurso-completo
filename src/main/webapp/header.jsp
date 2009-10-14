@@ -33,7 +33,8 @@
 	        	<li><a id="homeBtnEn" href="${path }"><span>home</span></a></li>
 	        	<li><a id="downloadBtnEn" href="${path }professores/form"><span>Adiciona professor</span></a></li>
 		        <li>
-		        <input type="text" name="materia" value="Digite uma matéria" onfocus="this.value='';"/>
+		        <input type="text" name="materia" value="Digite uma matéria" onfocus="this.value='';" 
+		        		onblur="if (this.value == '') this.value='Digite uma matéria';"/>
 		        <button type="submit">Busca</button></li>
 	        </ul><!-- menuElements-->
         </form>
