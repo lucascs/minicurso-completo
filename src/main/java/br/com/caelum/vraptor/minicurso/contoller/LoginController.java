@@ -2,6 +2,9 @@ package br.com.caelum.vraptor.minicurso.contoller;
 
 import static br.com.caelum.vraptor.view.Results.logic;
 import static br.com.caelum.vraptor.view.Results.page;
+
+import org.apache.log4j.Logger;
+
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
@@ -14,6 +17,8 @@ import br.com.caelum.vraptor.validator.Validations;
 @Open
 @Resource
 public class LoginController {
+
+	private static final Logger logger = Logger.getLogger(LoginController.class);
 
 	private final Usuario usuario;
 	private final Result result;
@@ -29,6 +34,7 @@ public class LoginController {
 
 	public void login(final String email, final String senha) {
 		final Professor professor = dao.find(email, senha);
+		logger.debug("Professor encontrado: " + professor);
 		validator.checking(new Validations() {{
 			that(professor != null, "login", "login.invalido");
 		}});

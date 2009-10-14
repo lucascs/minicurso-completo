@@ -1,5 +1,7 @@
 package br.com.caelum.vraptor.minicurso.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 
 import br.com.caelum.vraptor.ioc.Component;
@@ -24,6 +26,12 @@ public class ProfessorDao {
 			.setParameter("email", email)
 			.setParameter("senha", senha)
 			.uniqueResult();
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Professor> buscaPorMateria(String materia) {
+		String hql = "from Professor p where p.materias like :materia";
+		return session.createQuery(hql).setParameter("materia", "%" + materia + "%").list();
 	}
 
 }
