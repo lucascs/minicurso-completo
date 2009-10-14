@@ -1,0 +1,127 @@
+input, label {
+	display: block;
+}
+
+#site, #content, fieldset {
+       margin: 0 auto;
+       clear: both;
+       width: 715px;
+       display: block;
+}
+#h1-marca {
+       height: 95px;
+       width: 496px;
+       float: left;
+       margin: 0;
+       padding: 0;
+}
+body {
+       color: #000;
+       margin: 0;
+       padding: 0;
+       font: 11px "Trebuchet MS", "Trebuchet", Arial, verdana, helvetic;
+}
+#error-box {
+       background: #92B2CC;
+       color: #FFF;
+       float: left;
+       clear: both;
+       margin: 10px 10px;
+       padding: 5px;
+       width: 500px;
+       font-size: 10px;
+}
+#error-box ul {
+       margin: 5px 5px;
+       padding: 0;
+       font-size: 18px;
+       color: #FFF;
+       vertical-align: middle;
+       list-style: none;
+}
+#error-box hr {
+       border: solid #fff 1px;
+}
+
+.blue-box {
+       background: #92B2CC;
+       color: #FFF;
+       float: left;
+       clear: both;
+       margin: 10px 10px;
+       padding: 5px;
+       width: 500px;
+       font-size: 10px;
+}
+.blue-box select {
+       width: 200px;
+       font-size: 11px;
+}
+.blue-box input {
+       width: 200px;
+       font-size: 11px;
+}
+.blue-box h1 {
+       margin: 5px 5px;
+       padding: 0;
+       font-size: 18px;
+       color: #FFF;
+       vertical-align: middle;
+}
+.blue-box hr {
+       border: solid #fff 1px;
+}
+.blue-box td {
+       border: 0 solid white;
+}
+.blue-box table {
+       border: 0 solid white;
+       width: 500px;
+}
+.blue-box tr {
+       border: 1px solid white;
+       color: #FFF;
+       margin: 10px 0;
+       padding: 5px;
+       font-size: 12px;
+}
+.clr {
+       clear: both;
+}
+#header-menu {
+       float: left;
+       height: 90px;
+       display: block;
+       margin: 0;
+       padding: 0;
+}
+#h1-marca span {
+       display: none;
+}
+ul#menu-fundo {
+       background: url(vraptor.png) repeat-x left top;
+       list-style-type: none;
+       height: 81px;
+       margin: 0;
+       padding: 0;
+       float: right;
+       width: 360px;
+}
+img {
+    border: 0;
+}
+button {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: none;
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+	overflow: visible;
+	width: auto;
+}
+.buttonForm {
+	padding: 0;
+	margin: 0;
+}
