@@ -34,4 +34,13 @@ public class ProfessorDao {
 		return session.createQuery(hql).setParameter("materia", "%" + materia + "%").list();
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<Professor> list() {
+		return session.createCriteria(Professor.class).list();
+	}
+
+	public Professor load(Long id) {
+		return (Professor) session.load(Professor.class, id);
+	}
+
 }
