@@ -35,15 +35,22 @@ public class LoginController {
 	public void login(final String email, final String senha) {
 		final Professor professor = dao.find(email, senha);
 		logger.debug("Professor encontrado: " + professor);
+
 		validator.checking(new Validations() {{
 			that(professor != null, "login", "login.invalido");
 		}});
+
 		validator.onErrorUse(page()).of(LoginController.class).form();
 
 		usuario.login(professor);
 
 		result.use(logic()).redirectTo(ProfessoresController.class).home();
 	}
+
+
+
+
+
 
 	public void form() {
 
